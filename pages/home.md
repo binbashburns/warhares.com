@@ -1,9 +1,9 @@
 ---
 layout: home
 permalink: "/"
-title: "Curate is a premium portfolio for <strong>Jekyll.</strong>"
-description: "Showcase your projects, work or case studies in style with this markdown powered portfolio theme for Jekyll."
-meta_description: "Jekyll Curate is a premium Jekyll blog theme"
+title: "Warhares"
+description: "Carry Out the Plan"
+meta_description: "Warhares always carry out the plan, and we will rock your world"
 meta_title: Warhares.com - Coming Soon
 subscribe: false
 
