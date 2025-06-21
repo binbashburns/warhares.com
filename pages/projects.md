@@ -1,11 +1,11 @@
 ---
 layout: projects
-title: Projects
-permalink: "/projects/"
+title: The Warhares
+permalink: "/hares/"
 
 projects:
-  heading: "" # "Projects"
-  sub_heading: "" # "A collection of our recent work"
+  heading: "The Warhares" # "Projects"
+  sub_heading: "Meet the Hares" # "A collection of our recent work"
   limit: 96
   sort: date # date | weight
   view_more_button_text: "" # "More Projects"

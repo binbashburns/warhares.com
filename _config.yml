@@ -71,31 +71,31 @@ title: "Jekyll Curate"
 category_dir: category
 
 colors:
-  #light-mode colors
-  primary_bg: "#0d042b"
-  primary_bg_2: "#0d042b"
-  primary_bg_3: "#0d042b"
-  primary_text: "#fdfcf9"
-  base_bg: "#fdfcf9"
+  # light-mode colors
+  primary_bg: "#f7f6ed"         # main background
+  primary_bg_2: "#f5f5fa"       # secondary background
+  primary_bg_3: "#e9e7ef"       # tertiary background
+  primary_text: "#23223b"       # main text (deep navy/charcoal)
+  base_bg: "#ffffff"            # pure white for cards/sections
   base_bg_2: "#f7f6ed"
   base_bg_3: "#faebd7"
-  base_text: "#0d042b"
-  base_text_2: "#3b364c"
-  logo_text: "#0d042b"
-  header_text: "#0d042b"
+  base_text: "#23223b"
+  base_text_2: "#4fd2c2"        # soft blue accent (or use #4fd2c2 for mint)
+  logo_text: "#ff4f9c"          # your pink
+  header_text: "#23223b"
 
   # dark-mode colors
-  primary_bg_dark: "#fdfcf9"
-  primary_bg_2_dark: "#fdfcf9"
-  primary_bg_3_dark: "#fdfcf9"
-  primary_text_dark: "#0b0326"
-  base_bg_dark: "#0b0326"
-  base_bg_2_dark: "#150c32"
-  base_bg_3_dark: "#251654"
-  base_text_dark: "#f5f5ec"
-  base_text_2_dark: "#929eaf"
-  logo_text_dark: "#fdfcf9"
-  header_text_dark: "#fdfcf9"
+  primary_bg_dark: "#181825"    # deep blue/charcoal
+  primary_bg_2_dark: "#23223b"
+  primary_bg_3_dark: "#2d2d3a"
+  primary_text_dark: "#f5f5fa"  # off-white text
+  base_bg_dark: "#23223b"
+  base_bg_2_dark: "#181825"
+  base_bg_3_dark: "#23223b"
+  base_text_dark: "#f5f5fa"
+  base_text_2_dark: "#ff4f9c"   # pink accent for dark mode
+  logo_text_dark: "#ff4f9c"
+  header_text_dark: "#f5f5fa"
 
 fonts:
   use_google_fonts: false
@@ -127,8 +127,8 @@ header:
 open_graph:
   meta_opengraph_type: "website"
   meta_twitter_card: "summary"
-  meta_twitter_site: "@zerostaticio"
-  meta_twitter_creator: "@zerostaticio"
+  meta_twitter_site: ""
+  meta_twitter_creator: ""
 
 darkmode:
   enable_dark_mode: true
@@ -153,15 +153,10 @@ comments:
   disqus:
     shortname: "" # Your disqus shortcode for example "zerostatic". leave this blank ie "" to disable.
 
-newsletter:
-  mailchimp:
-    form_action_url: https://zerostatic.us21.list-manage.com/subscribe/post?u=798e19886b83aaab346734382&amp;id=f1c526a772&amp;f_id=0027e3e6f0
-    form_title: "Let's keep in touch"
-
 contact_form: 
   use_netlify_form: false
-  use_formspree_form: true
-  formspree_endpoint: https://formspree.io/f/moqyklqv
+  use_formspree_form: false
+  formspree_endpoint: ""
   netlify_form_name: "contact"
 
 menu: 
@@ -169,9 +164,9 @@ menu:
   show_social_media_in_mobile_menu: true
 
 footer:
-  enable_footer: true # show/hide the entire footer
-  footer_title: "Jekyll Curate"
-  footer_description: "Curate is a creative portfolio for Jekyll by Zerostatic Themes."
+  enable_footer: true
+  footer_title: "Warhares"
+  footer_description: "The Official Website of Warhares"
   enable_social_media_icons: true
   enable_contact_details: false
   enable_menu_footer_primary: true
@@ -182,7 +177,7 @@ footer:
   footer_tertiary_menu_title: "Other"
 
 bottom:
-  enable_bottom: false # show/hide the entire bottom (below the footer)
-  enable_bottom_menu: false # if enabled, the bottom menu can be edited in `_data/menu.yml`
-  copyright_text: "© 2021 Zerostatic Themes"
+  enable_bottom: false
+  enable_bottom_menu: false
+  copyright_text: "© 2024 Warhares"
   show_rss_icon: true
