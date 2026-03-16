@@ -1,0 +1,54 @@
+---
+layout: default
+body_classes: page-memories
+---
+
+<div class="section">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-12">
+        <h1>{{ page.title }}</h1>
+        {% if page.description %}
+          <p class="lead">{{ page.description }}</p>
+        {% endif %}
+      </div>
+    </div>
+    <div class="row g-3">
+      {% assign memory_images = site.static_files | where_exp: "file", "file.path contains '/assets/images/memories/'" %}
+      {% for image in memory_images %}
+        {% assign ext = image.extname | downcase %}
+        {% if ext == ".jpg" or ext == ".jpeg" or ext == ".png" or ext == ".gif" or ext == ".webp" %}
+        <div class="col-6 col-md-4 col-lg-3">
+          <a href="{{ image.path | relative_url }}" target="_blank" class="memory-thumb d-block">
+            <div class="memory-img-wrap">
+              <img src="{{ image.path | relative_url }}" alt="War Hares Memory"/>
+            </div>
+          </a>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<style>
+  .memory-img-wrap {
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%; /* 4:3 aspect ratio */
+    overflow: hidden;
+    border-radius: 6px;
+    background: #ffe8f0;
+  }
+  .memory-img-wrap img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+  }
+  .memory-thumb:hover .memory-img-wrap img {
+    transform: scale(1.04);
+  }
+</style>

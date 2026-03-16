@@ -2,67 +2,50 @@ main:
   - name: Home
     url: /
     weight: 1
-  - name: Projects
-    url: /projects/
+  - name: Hares
+    url: /hares/
     weight: 2
-    child:
-      - name: "Project Layout 1"
-        icon: "/assets/images/icons/wireframe-7.svg"
-        icon_darkmode: "/assets/images/icons/wireframe-7-white.svg"
-        description: "Default Project layout"
-        url: /projects/project-1/
-      - name: "Project Layout 2"
-        icon: "/assets/images/icons/wireframe-5.svg"
-        icon_darkmode: "/assets/images/icons/wireframe-5-white.svg"
-        description: "Right side layout"
-        url: /projects/project-2/
-      - name: "Project Layout 3"
-        icon: "/assets/images/icons/wireframe-6.svg"
-        icon_darkmode: "/assets/images/icons/wireframe-6-white.svg"
-        description: "Left side layout"
-        url: /projects/project-3/
-      - name: "Project Layout 4"
-        icon: "/assets/images/icons/wireframe-8.svg"
-        icon_darkmode: "/assets/images/icons/wireframe-8-white.svg"
-        description: "Top layout"
-        url: /projects/project-4/
-  - name: Blog
-    url: /blog/
-    weight: 2
-  - name: About
+  - name: The Story
     url: /about/
     weight: 3
-  - name: Contact
-    url: /contact/
+  - name: Code
+    url: /code/
     weight: 4
-  
+  - name: Memories
+    url: /memories/
+    weight: 5
+  - name: Playlist
+    url: /spotify/
+    weight: 6
+  - name: Blog
+    url: /blog/
+    weight: 7
+
 
 footer_primary:
-  - name: "Project 1"
-    url: /projects/project-1/
-  - name: "Project 2"
-    url: /projects/project-2/
-  - name: "Project 3"
-    url: /projects/project-3/
-  - name: "Project 4"
-    url: /projects/project-4/
-
-footer_secondary:
+  - name: Hares
+    url: /hares/
+  - name: The Story
+    url: /about/
+  - name: Code
+    url: /code/
+  - name: Memories
+    url: /memories/
+  - name: Playlist
+    url: /spotify/
   - name: Blog
     url: /blog/
-    weight: 2
-  - name: About
-    url: /about/
-    weight: 3
-  - name: Contact
-    url: /contact/
-    weight: 4
+
+footer_secondary:
+  - name: Home
+    url: /
+    weight: 1
   - name: Privacy Policy
     url: /privacy-policy/
-    weight: 1
+    weight: 2
   - name: Terms and Conditions
     url: /terms-and-conditions/
-    weight: 2
+    weight: 3
 
 footer_tertiary:
   - name: Privacy Policy

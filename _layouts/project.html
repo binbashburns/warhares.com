@@ -3,81 +3,136 @@ layout: default
 body_classes: page-project
 ---
 
-{% assign limit = page.gallery_limit | default: 6 %}
+{% assign gallery_limit = page.gallery_limit | default: 6 %}
 
 <div class="section">
   <div class="container">
-    <div class="row">
+
+    <div class="row mb-4">
 
       <div class="col-12 col-md-6 mb-4">
-
         {% if page.title %}
-          <div class="project-heading">
-            <h1>{{ page.title }}</h1>
-          </div>
+          <h1>{{ page.title }}</h1>
         {% endif %}
 
-        {% if page.categories %}
-          <div class="project-categories">
-          {% include framework/categories-badges.html 
-              categories=page.categories
-          %}
-          </div>
+        {% if page.description %}
+          <p class="lead mb-3"><em>{{ page.description }}</em></p>
         {% endif %}
 
-        {% if page.date %}
-          <div class="project-date">
-            <strong>Date </strong><span>{{ page.date | date_to_long_string }}</span>
-          </div>
-        {% endif %}
+        <dl class="row mt-3">
+          {% if page.branch %}
+          <dt class="col-sm-4">Branch</dt>
+          <dd class="col-sm-8">{{ page.branch }}</dd>
+          {% endif %}
 
-        {% if page.client %}
-          <div class="project-client">
-            <strong>Client </strong><span>{{ page.client }}</span>
-          </div>
-        {% endif %}
+          {% if page.mos %}
+          <dt class="col-sm-4">MOS</dt>
+          <dd class="col-sm-8">{{ page.mos }}</dd>
+          {% endif %}
 
-        {% if page.role %}
-          <div class="project-role">
-            <strong>Role </strong><span>{{ page.role }}</span>
-          </div>
-        {% endif %}
-
+          {% if page.hometown %}
+          <dt class="col-sm-4">Hometown</dt>
+          <dd class="col-sm-8">{{ page.hometown }}</dd>
+          {% endif %}
+        </dl>
       </div>
 
       <div class="col-12 col-md-6 mb-4">
-        <div class="content">{{ content }}</div>
+        {% if page.image %}
+          <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="img-fluid rounded"/>
+        {% endif %}
       </div>
 
     </div>
 
-    <div class="row">
-      <div class="col">
+    {% if content != "" %}
+    <div class="row mb-4">
+      <div class="col-12">
+        <div class="content">{{ content }}</div>
+      </div>
+    </div>
+    {% endif %}
+
+    {% if page.quote %}
+    <div class="row mb-4">
+      <div class="col-12 col-md-8">
+        <h2>Favorite Quote</h2>
+        <blockquote class="blockquote p-3 rounded" style="border-left: 4px solid #ff1493; background: var(--bs-body-bg);">
+          <p>{{ page.quote }}</p>
+        </blockquote>
+      </div>
+    </div>
+    {% endif %}
+
+    {% if page.memory %}
+    <div class="row mb-4">
+      <div class="col-12 col-md-8">
+        <h2>Favorite War Hares Memory</h2>
+        <p>{{ page.memory }}</p>
+      </div>
+    </div>
+    {% endif %}
+
+    {% if page.blurbs %}
+    <div class="row mb-4">
+      <div class="col-12">
+        <h2>What the Hares Say</h2>
+        <div class="row">
+          {% for blurb in page.blurbs %}
+          <div class="col-12 col-md-6 mb-3">
+            <blockquote class="blockquote p-3 rounded" style="border-left: 4px solid #ff1493; background: var(--bs-body-bg);">
+              <p class="mb-1">{{ blurb.text }}</p>
+              {% if blurb.author %}
+                <footer class="blockquote-footer mt-1">{{ blurb.author }}</footer>
+              {% endif %}
+            </blockquote>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+    {% if page.tattoos %}
+    <div class="row mb-4">
+      <div class="col-12">
+        <h2>Ink</h2>
         <div class="gallery gallery-masonry">
-          {% for item in page.gallery limit: limit %}
+          {% for item in page.tattoos %}
             <div class="gallery-item">
               <div class="gallery-image"><img src="{{ item.image | relative_url }}"/></div>
-              {% if item.caption %}
-              <div class="gallery-caption">{{ item.caption }}</div>
-              {% endif %}
+              {% if item.caption %}<div class="gallery-caption">{{ item.caption }}</div>{% endif %}
             </div>
           {% endfor %}
         </div>
       </div>
     </div>
+    {% endif %}
+
+    {% if page.gallery %}
+    <div class="row mb-4">
+      <div class="col">
+        <div class="gallery gallery-masonry">
+          {% for item in page.gallery limit: gallery_limit %}
+            <div class="gallery-item">
+              <div class="gallery-image"><img src="{{ item.image | relative_url }}"/></div>
+              {% if item.caption %}<div class="gallery-caption">{{ item.caption }}</div>{% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
   </div>
 </div>
 
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 <script>
-  var grid = document.querySelector('.gallery');
-  var msnry;
-
-  imagesLoaded( grid, function() {
-    msnry = new Masonry( grid, {
-      itemSelector: '.gallery-item',
-      percentPosition: true,
+  document.querySelectorAll('.gallery').forEach(function(grid) {
+    imagesLoaded(grid, function() {
+      new Masonry(grid, { itemSelector: '.gallery-item', percentPosition: true });
     });
   });
 </script>

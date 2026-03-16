@@ -67,35 +67,35 @@ exclude:
 # -------------------
 # Theme Config
 # --------------------
-title: "Jekyll Curate"
+title: "War Hares"
 category_dir: category
 
 colors:
-  # light-mode colors
-  primary_bg: "#f7f6ed"         # main background
-  primary_bg_2: "#f5f5fa"       # secondary background
-  primary_bg_3: "#e9e7ef"       # tertiary background
-  primary_text: "#23223b"       # main text (deep navy/charcoal)
-  base_bg: "#ffffff"            # pure white for cards/sections
-  base_bg_2: "#f7f6ed"
-  base_bg_3: "#faebd7"
-  base_text: "#23223b"
-  base_text_2: "#4fd2c2"        # soft blue accent (or use #4fd2c2 for mint)
-  logo_text: "#ff4f9c"          # your pink
-  header_text: "#23223b"
+  # light-mode colors (pink & white - Energizer Bunny inspired)
+  primary_bg: "#ffffff"         # pure white background
+  primary_bg_2: "#fff5f8"       # soft pink tint
+  primary_bg_3: "#ffe8f0"       # light pink
+  primary_text: "#1a1a2e"       # near-black text
+  base_bg: "#ffffff"
+  base_bg_2: "#fff5f8"
+  base_bg_3: "#ffe8f0"
+  base_text: "#1a1a2e"
+  base_text_2: "#ff1493"        # hot pink accent
+  logo_text: "#ff1493"          # hot pink logo
+  header_text: "#1a1a2e"
 
   # dark-mode colors
-  primary_bg_dark: "#181825"    # deep blue/charcoal
-  primary_bg_2_dark: "#23223b"
-  primary_bg_3_dark: "#2d2d3a"
-  primary_text_dark: "#f5f5fa"  # off-white text
-  base_bg_dark: "#23223b"
-  base_bg_2_dark: "#181825"
-  base_bg_3_dark: "#23223b"
-  base_text_dark: "#f5f5fa"
-  base_text_2_dark: "#ff4f9c"   # pink accent for dark mode
-  logo_text_dark: "#ff4f9c"
-  header_text_dark: "#f5f5fa"
+  primary_bg_dark: "#1a0010"
+  primary_bg_2_dark: "#280018"
+  primary_bg_3_dark: "#380025"
+  primary_text_dark: "#fff5f8"
+  base_bg_dark: "#280018"
+  base_bg_2_dark: "#1a0010"
+  base_bg_3_dark: "#280018"
+  base_text_dark: "#fff5f8"
+  base_text_2_dark: "#ff1493"   # hot pink accent for dark mode
+  logo_text_dark: "#ff69b4"
+  header_text_dark: "#fff5f8"
 
 fonts:
   use_google_fonts: false
@@ -107,11 +107,11 @@ fonts:
   logo: "'DM Sans'"
 
 logo:
-  logo_text: "Jekyll Curate"
+  logo_text: "War Hares"
   logo_image: assets/images/logo/logo.png
   logo_image_mobile: assets/images/logo/logo-mobile.png
-  logo_image_invert: assets/images/logo/logo-invert.png
-  logo_image_invert_mobile: assets/images/logo/logo-invert-mobile.png
+  logo_image_invert: assets/images/logo/logo.png
+  logo_image_invert_mobile: assets/images/logo/logo-mobile.png
   logo_image_desktop_height: "28px"
   logo_image_desktop_width: "28px"
   logo_image_mobile_height: "28px"
@@ -137,8 +137,8 @@ darkmode:
   show_dark_mode_toggle_in_mobile_menu: true
 
 cookie_banner:
-  enabled: true
-  show_manage_cookies_at_bottom: true
+  enabled: false
+  show_manage_cookies_at_bottom: false
 
 analytics:
   google_analytics_id: "" # G-XXXXXXXXXX
@@ -165,19 +165,19 @@ menu:
 
 footer:
   enable_footer: true
-  footer_title: "Warhares"
-  footer_description: "The Official Website of Warhares"
+  footer_title: "War Hares"
+  footer_description: "WOCS 24-001 - Our Time Is Now"
   enable_social_media_icons: true
   enable_contact_details: false
   enable_menu_footer_primary: true
   enable_menu_footer_secondary: true
   enable_menu_footer_tertiary: false
-  footer_primary_menu_title: "Our Projects"
-  footer_secondary_menu_title: "Company"
+  footer_primary_menu_title: "Navigate"
+  footer_secondary_menu_title: "Site"
   footer_tertiary_menu_title: "Other"
 
 bottom:
-  enable_bottom: false
+  enable_bottom: true
   enable_bottom_menu: false
-  copyright_text: "© 2024 Warhares"
-  show_rss_icon: true
+  copyright_text: "© 2024 War Hares - WOCS 24-001"
+  show_rss_icon: false

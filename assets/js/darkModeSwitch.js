@@ -34,10 +34,9 @@ function initDarkMode() {
     darkModeSwitches.forEach((item) => item.classList.add("light"));
     return;
   }
-  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-    document.documentElement.setAttribute("data-bs-theme", "dark");
-    darkModeSwitches.forEach((item) => item.classList.add("dark"));
-  }
+  // Default to light mode regardless of system preference
+  document.documentElement.setAttribute("data-bs-theme", "light");
+  darkModeSwitches.forEach((item) => item.classList.add("light"));
 }
 
 initDarkMode();

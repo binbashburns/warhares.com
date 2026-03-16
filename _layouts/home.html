@@ -5,13 +5,21 @@ body_classes: page-home
 
 <div class="section">
   <div class="container">
-    <div class="row">
-      <div class="col-12">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-7">
         {% include framework/heading.html
         title=page.title
         description=page.description
         %}
+        {% if content != "" %}
+          <div class="content mt-3">{{ content }}</div>
+        {% endif %}
       </div>
+      {% if page.hero_image %}
+      <div class="col-12 col-md-5 text-center">
+        <img src="{{ page.hero_image | relative_url }}" alt="War Hare" class="img-fluid" style="max-height: 420px;"/>
+      </div>
+      {% endif %}
     </div>
   </div>
 </div>

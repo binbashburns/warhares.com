@@ -1,46 +1,19 @@
 ---
 layout: basic
-title: "About Us"
-date: 2018-11-28T15:15:34+10:00
+title: "The Story"
+date: 2024-09-01
 permalink: "/about/"
-description: "Business plan hackathon handshake responsive web design."
-image: "/assets/images/gen/content/content-5.webp"
+description: "Rare O'Hare: The Eminent Technical & Tactical War Hare"
 ---
 
-# Creating Modern Websites
+*"Our time is now!" - WOCS 24-001*
 
-Web design encompasses many different skills and disciplines in the production and maintenance of websites.
+Standing tall, towering above all, emerges the mighty hubristic war hare from the warren in the calm of the night. Perched on long, powerful hinds, elongated ears that stretch far and wide, with vigilant eyes, the battle-tested war hare stands readily observant for any surprise. He is the guardian of his colony, a defender of freedom, and a master of his craft. While he is cool, calm, and collected, the valiant hare always stands unaided, solitarily able to adapt to any circumstance. With eminent instincts and tactical traditions, he is prepared to swiftly unleash the "mad as a march hare" ferocity when the wolf growls at the door, because he's been there, done that, and is always ready for more.
 
-Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all. Web design partially overlaps web engineering in the broader scope of web development.
+Rare O'Hare, the elusive war hare, is a leader of sorts. He is prepared to cunningly contest the enemy in the midst of war. Set to employ his unique sparring technique, the war hare stands ready to defend his colony against all enemies in close combat, reluctant to retreat. With elusive speed, the war hare is rarely sighted amongst the battlefield, as he remains a mystique, long forfeited by rabbits. It is he, Rare O'Hare, that portrays creativity and passion for his craft, always striving for perfection. He is a trusted companion, rendering guidance and support to all. He is the technical and tactical professional!
 
-## What is Web Design?
+The distinctive wear of the war hare's service uniform displays multiple rows of shiny suspended martialed medals, fastened near and dear to the heart. The tried-and-true experience speaks for itself. His strength in knowledge shines as a bright beacon for all to see, credibly a source of inspiration. His wealth is unparalleled, skills unmatched, and his dedication unwavering, comparable to that of a military Warrant Officer. A pronounced Warrant Officer serves in a role that is vital to mission success, a revered trailblazer. The fellow peers of the colonies look to his guidance and inspiration, knowing that with him on their side, they stand a fighting chance.
 
-User experience is about how a user interacts with, and experiences, a particular product, system or service. As a UX designer, you should consider the Why, What and How of product use.
+Admired for the strength, unpredictability, and exceptional technical and tactical knowledge, Rare O'Hare's presence on the battlefield brings a sense of hope and good luck to all allies. Signaling new beginnings on the horizon, Rare O'Hare inspires them to prevail against all odds - *"our time is now!"* With impressive speed and agility, the brilliant war hare is revered for the unwavering dedication to helping those in need. Whether it's a perilous mission deep within enemy territory or a complex strategy to outsmart the opposition, Rare O'Hare attacks every task with precision and determination.
 
-{% include framework/shortcodes/figure.html src="/assets/images/gen/content/content-1.webp" title="Steve Francia" caption="Designing in Figma" alt="Photo of designing a website in Figma" link="https://figma.com" target="\_blank" %}
-
-## Front-end Development
-
-The What addresses the things people can do with a product—its functionality. Finally, the How relates to the design of functionality in an accessible and aesthetically pleasant way. UX designers start with the Why before determining the What and then, finally, the How in order to create products that users can form meaningful experiences with. In software designs, you will need to ensure the product’s “substance” comes through an existing device and offers a seamless, fluid experience.
-
-> As a UX designer, you should consider the Why, What and How of product use.
-
-Web designers are expected to have an awareness of usability and if their role involves creating markup then they are also expected to be up to date with web accessibility guidelines.
-
-## Design Systems
-
-A Design System is a set of interconnected patterns and shared practices coherently organized to aid in digital product design and development of products such as apps or websites.
-
-{% include framework/shortcodes/youtube.html id='2M6dJ2Uynhg' %}
-
-## Process
-
-There are two primary jobs involved in creating a website: the web designer and web developer, who often work closely together on a website. The web designers are responsible for the visual aspect, which includes the layout, coloring and typography of a web page.
-
-- User experience research
-- Visual design and illustration
-- Programming and coding
-
-![Design In Figma]({{ "/assets/images/gen/content/content-2.webp" | relative_url }})
-
-Web designers will also have a working knowledge of markup languages such as HTML and CSS, although the extent of their knowledge will differ from one web designer to another.
+Rare O'Hare's ability to assess situations quickly and provide swift assistance has earned him the reputation as a trustworthy and reliable ally. Understanding the gravity of any situation, Rare O'Hare always steps forward as a guiding light and a steward of confidence and power. He is a positive role model, an expert, and a professional. Rare O'Hare emerges as a true hero, heralded for his bravery, resilience, guidance, and support in the face of adversity.
